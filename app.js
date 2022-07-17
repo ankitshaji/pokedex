@@ -1,4 +1,4 @@
-// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
+//ULR: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
 
 //Element object = Document Node/ElmentObject.method(css element selector)
 //parent element object - first occurence
@@ -6,9 +6,11 @@ const container = document.querySelector("#container");
 const baseURL =
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
 //element object creation-valueset-parent object append- loop
-for (let i = 1; i < 152; i++) {
-  //create div,span ,label,img element object - document object method(argument)
+for (let i = 1; i <= 151; i++) {
+  //create div,span ,label,img element object - documentObject.method(argument)
   const pokeBox = document.createElement("div");
+  //adding class to div/pokeBox.classList - DOMTokeListObject.add("className")
+  pokeBox.classList.add("pokemon");
   const label = document.createElement("span");
   label.innerText = `#${i}`; //string template literal //human visible text
   const newImg = document.createElement("img");

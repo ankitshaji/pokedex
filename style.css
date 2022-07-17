@@ -1,10 +1,10 @@
-div {
+.pokemon {
   /*default block*/
   display: inline-block;
   text-align: center;
 }
 
-img {
-/*default inline*/
+.pokemon img {
+  /*default inline*/
   display: block;
 }
