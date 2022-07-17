@@ -1,0 +1,10 @@
+div {
+  /*default block*/
+  display: inline-block;
+  text-align: center;
+}
+
+img {
+/*default inline*/
+  display: block;
+}
